@@ -43,48 +43,8 @@ onMounted(() => {
 
 <template>
   <Header />
-  <section class="container mx-auto"></section>
-  <section class="container mx-auto -mt-20 flex gap-6 px-4">
+  <section class="container mx-auto mt-6 flex gap-6 px-4">
     <div class="flex-1">
-      <div
-        v-if="posts.length"
-        class="group mb-6 flex cursor-pointer grid-cols-3 flex-col overflow-hidden rounded-xl bg-white shadow-md ring-black transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:ring-2 sm:grid"
-      >
-        <div class="aspect-w-16 aspect-h-9 col-span-1">
-          <img
-            :src="`${posts[0].cover}?id=${Math.random()}`"
-            :alt="posts[0].title"
-            class="h-full w-full object-cover transition-all duration-500"
-          />
-        </div>
-        <div class="relative flex flex-col p-4">
-          <div class="flex flex-wrap items-center gap-2">
-            <a class="mr-1 font-medium text-gray-800 hover:text-gray-900">
-              {{ posts[0].category }}
-            </a>
-            <a
-              :href="tag"
-              class="cursor-pointer text-sm italic text-gray-600 hover:text-gray-900"
-              v-for="(tag, tagIndex) in posts[0].tags"
-              :key="tagIndex"
-            >
-              #{{ tag }}
-            </a>
-          </div>
-          <h1
-            class="mt-2 cursor-pointer text-2xl font-medium transition-all hover:text-gray-500 hover:underline"
-          >
-            <a href="#">{{ posts[0].title }}</a>
-          </h1>
-          <p class="font-sm mt-2 font-light">{{ posts[0].summary }}</p>
-          <div class="mt-2 flex flex-1 items-center justify-start gap-2">
-            <img src="https://ryanc.cc/avatar" class="h-8 w-8 rounded-full" />
-            <span class="text-sm tabular-nums text-gray-600">
-              发布于 2022-10-01
-            </span>
-          </div>
-        </div>
-      </div>
       <div id="filters" class="flex items-center">
         <div class="inline-flex items-center gap-2">
           <div
@@ -97,9 +57,7 @@ onMounted(() => {
             :key="i"
             class="cursor-pointer rounded px-2 py-1 font-semibold text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900"
           >
-            <RouterLink :to="{ name: 'Category', params: { name: i } }">
-              {{ faker.lorem.word() }} <sup>{{ i }}</sup>
-            </RouterLink>
+            {{ faker.lorem.word() }} <sup>{{ i }}</sup>
           </div>
         </div>
       </div>

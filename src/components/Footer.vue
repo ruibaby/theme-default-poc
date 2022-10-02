@@ -3,19 +3,19 @@
 <template>
   <footer class="mt-10 bg-white py-8">
     <div
-      class="sm:flex sm:items-center sm:justify-between container px-4 mx-auto"
+      class="container mx-auto px-4 sm:flex sm:items-center sm:justify-between"
     >
       <a
         href="https://halo.run/"
-        class="flex items-center mb-4 sm:mb-0 justify-center sm:justify-start"
+        class="mb-4 flex items-center justify-center sm:mb-0 sm:justify-start"
       >
         <img src="https://halo.run/logo" class="mr-3 h-8" alt="Halo Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap">
+        <span class="self-center whitespace-nowrap text-2xl font-semibold">
           Halo
         </span>
       </a>
       <ul
-        class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 justify-center sm:justify-start"
+        class="mb-6 flex flex-wrap items-center justify-center text-sm text-gray-500 sm:mb-0 sm:justify-start"
       >
         <li>
           <a href="#" class="mr-4 hover:underline md:mr-6">首页</a>
@@ -33,7 +33,7 @@
     </div>
     <hr class="my-6 border-gray-100 sm:mx-auto lg:my-8" />
     <span
-      class="block text-sm text-gray-500 text-center container px-4 mx-auto"
+      class="container mx-auto block px-4 text-center text-sm text-gray-500"
     >
       © 2022
       <a href="https://halo.run" class="hover:underline">Halo</a>. All Rights
