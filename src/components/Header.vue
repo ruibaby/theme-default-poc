@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import MdiFileSearchOutline from "~icons/mdi/file-search-outline";
+import TablerSearch from "~icons/tabler/search";
+import TablerBrightness2 from "~icons/tabler/brightness-2";
 </script>
 
 <template>
@@ -40,8 +41,8 @@ import MdiFileSearchOutline from "~icons/mdi/file-search-outline";
         </div>
         <div class="flex items-center">
           <ul class="flex items-center gap-4">
-            <li>🌞</li>
-            <li><MdiFileSearchOutline class="text-white" /></li>
+            <li><TablerBrightness2 class="text-white" /></li>
+            <li><TablerSearch class="text-white" /></li>
           </ul>
         </div>
       </div>

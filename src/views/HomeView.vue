@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { faker } from "@faker-js/faker";
-import MdiArrowLeft from "~icons/mdi/arrow-left";
-import MdiArrowRight from "~icons/mdi/arrow-right";
+import TablerArrowLeft from "~icons/tabler/arrow-left";
+import TablerArrowRight from "~icons/tabler/arrow-right";
 import Header from "../components/Header.vue";
 import Sidebar from "../components/Sidebar.vue";
 import Footer from "../components/Footer.vue";
@@ -114,7 +114,7 @@ onMounted(() => {
         <button
           class="whitespace-no-wrap group inline-flex items-center justify-center gap-1 rounded-md border border-gray-200 bg-white px-4 py-1 text-sm font-medium leading-6 text-gray-600 shadow-sm hover:bg-gray-50 focus:shadow-none focus:outline-none"
         >
-          <MdiArrowLeft class="transition-all group-hover:-translate-x-1" />
+          <TablerArrowLeft class="transition-all group-hover:-translate-x-1" />
           <span>上一页</span>
         </button>
         <span class="text-sm text-gray-900">1 / 20</span>
@@ -122,7 +122,7 @@ onMounted(() => {
           class="whitespace-no-wrap group inline-flex items-center justify-center gap-1 rounded-md border border-gray-200 bg-white px-4 py-1 text-sm font-medium leading-6 text-gray-600 shadow-sm hover:bg-gray-50 focus:shadow-none focus:outline-none"
         >
           <span>下一页</span>
-          <MdiArrowRight class="transition-all group-hover:translate-x-1" />
+          <TablerArrowRight class="transition-all group-hover:translate-x-1" />
         </button>
       </div>
     </div>

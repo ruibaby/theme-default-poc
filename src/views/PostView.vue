@@ -4,8 +4,8 @@ import { faker } from "@faker-js/faker";
 import Header from "../components/Header.vue";
 import Sidebar from "../components/Sidebar.vue";
 import Footer from "../components/Footer.vue";
-import MdiShareVariantOutline from "~icons/mdi/share-variant-outline";
-import MdiCommentQuoteOutline from "~icons/mdi/comment-quote-outline";
+import TablerShare from "~icons/tabler/share";
+import TablerMessageCircle from "~icons/tabler/message-circle";
 import { Comment } from "@halo-dev/comment-widget";
 import "@halo-dev/comment-widget/dist/style.css";
 
@@ -53,10 +53,10 @@ const post = ref<Post>({
         </div>
         <div class="inline-flex flex-row gap-1">
           <div class="cursor-pointer rounded-lg p-1 hover:bg-gray-100">
-            <MdiCommentQuoteOutline class="text-gray-600 hover:text-gray-900" />
+            <TablerMessageCircle class="text-gray-600 hover:text-gray-900" />
           </div>
           <div class="cursor-pointer rounded-lg p-1 hover:bg-gray-100">
-            <MdiShareVariantOutline class="text-gray-600 hover:text-gray-900" />
+            <TablerShare class="text-gray-600 hover:text-gray-900" />
           </div>
         </div>
       </div>
