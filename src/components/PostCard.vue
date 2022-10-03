@@ -15,18 +15,20 @@ export interface Post {
 withDefaults(
   defineProps<{
     post?: Post;
+    cover?: boolean;
   }>(),
   {
     post: undefined,
+    cover: true,
   }
 );
 </script>
 
 <template>
   <div
-    class="group cursor-pointer overflow-hidden rounded-xl bg-white shadow-md ring-black transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:ring-2"
+    class="group flex cursor-pointer flex-col overflow-hidden rounded-xl bg-white shadow-md ring-black transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:ring-2"
   >
-    <div class="aspect-w-16 aspect-h-9">
+    <div v-if="cover" class="aspect-w-16 aspect-h-9">
       <img
         :src="`${post?.cover}?id=${Math.random()}`"
         :alt="post?.title"

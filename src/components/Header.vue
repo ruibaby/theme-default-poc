@@ -5,11 +5,14 @@ import TablerBrightness2 from "~icons/tabler/brightness-2";
 
 <template>
   <header>
-    <div class="h-72 bg-gradient-to-r from-gray-800 to-red-500">
+    <div class="h-96 bg-gradient-to-r from-cyan-500 to-blue-500">
       <div class="container mx-auto flex justify-between py-4">
         <div class="flex items-center gap-6">
           <div>
-            <img src="https://halo.run/logo" class="h-8 w-8" />
+            <img
+              src="https://halo.run/upload/2022/03/logo.svg"
+              class="h-14 w-14"
+            />
           </div>
           <ul class="flex items-center gap-4 text-white">
             <li

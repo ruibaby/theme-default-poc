@@ -27,7 +27,7 @@ onMounted(() => {
   for (let i = 0; i <= 20; i++) {
     posts.value.push({
       title: faker.lorem.words(),
-      summary: faker.lorem.sentences(),
+      summary: faker.lorem.sentences(2),
       cover: faker.image.unsplash.nature(),
       createdAt: "2021-01-01",
       author: {

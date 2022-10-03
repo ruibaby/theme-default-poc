@@ -41,25 +41,25 @@ import { faker } from "@faker-js/faker";
             <span class="text-xl font-medium tabular-nums text-gray-900">
               {{ faker.datatype.number({ min: 20, max: 200 }) }}
             </span>
-            <span class="text-sm font-light text-gray-600">文章数</span>
+            <span class="text-xs font-light text-gray-600">文章数</span>
           </div>
           <div class="inline-flex flex-col items-center">
             <span class="text-xl font-medium tabular-nums text-gray-900">
               {{ faker.datatype.number({ min: 10, max: 20 }) }}
             </span>
-            <span class="text-sm font-light text-gray-600">分类数</span>
+            <span class="text-xs font-light text-gray-600">分类数</span>
           </div>
           <div class="inline-flex flex-col items-center">
             <span class="text-xl font-medium tabular-nums text-gray-900">
               {{ faker.datatype.number({ min: 100, max: 900 }) }}
             </span>
-            <span class="text-sm font-light text-gray-600">评论数</span>
+            <span class="text-xs font-light text-gray-600">评论数</span>
           </div>
           <div class="inline-flex flex-col items-center">
             <span class="text-xl font-medium tabular-nums text-gray-900">
               {{ faker.datatype.number() }}
             </span>
-            <span class="text-sm font-light text-gray-600">访问量</span>
+            <span class="text-xs font-light text-gray-600">访问量</span>
           </div>
         </div>
         <div class="grid grid-cols-6 items-center gap-5">

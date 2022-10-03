@@ -28,6 +28,7 @@ const router = createRouter({
       component: CategoryView,
     },
   ],
+  scrollBehavior: () => ({ left: 0, top: 0 }),
 });
 
 export default router;
