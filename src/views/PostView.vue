@@ -6,6 +6,7 @@ import Sidebar from "../components/Sidebar.vue";
 import Footer from "../components/Footer.vue";
 import TablerShare from "~icons/tabler/share";
 import TablerMessageCircle from "~icons/tabler/message-circle";
+// @ts-ignore
 import { Comment } from "@halo-dev/comment-widget";
 import "@halo-dev/comment-widget/dist/style.css";
 
