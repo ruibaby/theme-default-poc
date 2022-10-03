@@ -8,7 +8,7 @@ import { faker } from "@faker-js/faker";
 <template>
   <Header />
   <section class="container mx-auto"></section>
-  <section class="container mx-auto -mt-20 flex gap-6 px-4">
+  <section class="container mx-auto -mt-20 flex gap-6">
     <div class="flex-1 rounded-xl bg-white p-4">
       <h1 class="my-3 text-2xl font-medium">链接</h1>
       <div

@@ -2,9 +2,7 @@
 
 <template>
   <footer class="mt-10 bg-white py-8">
-    <div
-      class="container mx-auto px-4 sm:flex sm:items-center sm:justify-between"
-    >
+    <div class="container mx-auto sm:flex sm:items-center sm:justify-between">
       <a
         href="https://halo.run/"
         class="mb-4 flex items-center justify-center sm:mb-0 sm:justify-start"
@@ -32,9 +30,7 @@
       </ul>
     </div>
     <hr class="my-6 border-gray-100 sm:mx-auto lg:my-8" />
-    <span
-      class="container mx-auto block px-4 text-center text-sm text-gray-500"
-    >
+    <span class="container mx-auto block text-center text-sm text-gray-500">
       © 2022
       <a href="https://halo.run" class="hover:underline">Halo</a>. All Rights
       Reserved.

@@ -44,7 +44,7 @@ onMounted(() => {
 <template>
   <Header />
   <section class="container mx-auto"></section>
-  <section class="container mx-auto -mt-20 flex gap-6 px-4">
+  <section class="container mx-auto -mt-20 flex gap-6">
     <div class="flex-1">
       <div
         v-if="posts.length"
@@ -57,7 +57,7 @@ onMounted(() => {
             class="h-full w-full object-cover transition-all duration-500"
           />
         </div>
-        <div class="relative flex flex-col p-4">
+        <div class="relative col-span-2 flex flex-col p-4">
           <div class="flex flex-wrap items-center gap-2">
             <a class="mr-1 font-medium text-gray-800 hover:text-gray-900">
               {{ posts[0].category }}

@@ -41,7 +41,7 @@ const post = ref<Post>({
 <template>
   <Header />
   <section class="container mx-auto"></section>
-  <section class="container mx-auto -mt-20 flex gap-6 px-4">
+  <section class="container mx-auto -mt-20 flex gap-6">
     <div class="flex-1 rounded-xl bg-white p-4">
       <div class="flex items-center justify-between">
         <div class="inline-flex items-center justify-start gap-2">
@@ -71,7 +71,7 @@ const post = ref<Post>({
           #{{ faker.lorem.word() }}
         </a>
       </div>
-      <article class="mt-4 prose max-w-none prose-base">
+      <article class="prose prose-base mt-4 max-w-none">
         {{ post.content }}
       </article>
       <hr class="my-10" />
