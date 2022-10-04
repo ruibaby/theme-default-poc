@@ -6,7 +6,6 @@ import TablerCategory from "~icons/tabler/category";
 import TablerEye from "~icons/tabler/eye";
 import SimpleIconsWechat from "~icons/simple-icons/wechat";
 import SimpleIconsBilibili from "~icons/simple-icons/bilibili";
-import SimpleIconsZhihu from "~icons/simple-icons/zhihu";
 import SimpleIconsTwitter from "~icons/simple-icons/twitter";
 import SimpleIconsTelegram from "~icons/simple-icons/telegram";
 import SimpleIconsFeedly from "~icons/simple-icons/feedly";
@@ -15,7 +14,7 @@ import { faker } from "@faker-js/faker";
 </script>
 
 <template>
-  <aside class="hidden h-full w-80 flex-col gap-6 sm:flex">
+  <aside class="col-span-1 hidden h-full flex-col gap-6 sm:flex">
     <div
       class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md"
     >

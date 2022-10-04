@@ -33,7 +33,7 @@ const onScroll = () => {
                 class="h-14 w-14"
               />
             </div>
-            <ul class="flex items-center gap-4 text-white">
+            <ul class="flex items-center gap-6 text-white">
               <li
                 class="cursor-pointer opacity-100 transition-all hover:opacity-100"
               >

@@ -43,8 +43,8 @@ const post = ref<Post>({
 <template>
   <Header />
   <section class="container mx-auto"></section>
-  <section class="container mx-auto -mt-20 flex gap-6">
-    <div class="flex-1 rounded-xl bg-white p-4">
+  <section class="container mx-auto -mt-20 grid grid-cols-4 gap-6">
+    <div class="col-span-4 rounded-xl bg-white p-4 sm:col-span-3">
       <div class="flex items-center justify-between">
         <div class="inline-flex items-center justify-start gap-2">
           <img src="https://ryanc.cc/avatar" class="h-10 w-10 rounded-full" />

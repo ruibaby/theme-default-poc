@@ -44,8 +44,8 @@ onMounted(() => {
 <template>
   <Header />
   <section class="container mx-auto"></section>
-  <section class="container mx-auto -mt-20 flex gap-6">
-    <div class="flex-1">
+  <section class="container mx-auto -mt-20 grid grid-cols-4 gap-6">
+    <div class="col-span-4 sm:col-span-3">
       <div
         v-if="posts.length"
         class="group mb-6 flex cursor-pointer grid-cols-3 flex-col overflow-hidden rounded-xl bg-white shadow-md ring-black transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:ring-2 sm:grid"
@@ -85,24 +85,33 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div id="filters" class="flex items-center">
-        <div class="inline-flex items-center gap-2">
-          <div
-            class="cursor-pointer rounded bg-gray-100 px-2 py-1 font-semibold text-gray-900"
-          >
-            全部
+
+      <div
+        id="filters"
+        class="flex gap-x-2 overflow-x-auto overflow-y-hidden scroll-smooth"
+      >
+        <div
+          class="flex cursor-pointer items-center rounded bg-gray-100 px-2 py-1 font-semibold text-gray-900 transition-all hover:shadow-sm"
+        >
+          <div class="flex flex-1 items-center truncate">
+            <span class="truncate text-base"> 全部 </span>
           </div>
-          <div
-            v-for="i in 5"
-            :key="i"
-            class="cursor-pointer rounded px-2 py-1 font-semibold text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900"
-          >
-            <RouterLink :to="{ name: 'Category', params: { name: i } }">
-              {{ faker.lorem.word() }} <sup>{{ i }}</sup>
-            </RouterLink>
+        </div>
+        <div
+          v-for="index in 10"
+          :key="index"
+          class="flex cursor-pointer items-center rounded px-2 py-1 font-semibold text-gray-500 transition-all hover:bg-gray-100 hover:text-gray-900 hover:shadow-sm"
+        >
+          <div class="flex flex-1 items-center truncate">
+            <span class="truncate text-base">
+              <RouterLink :to="{ name: 'Category', params: { name: index } }">
+                {{ faker.lorem.word() }} <sup>{{ index }}</sup>
+              </RouterLink>
+            </span>
           </div>
         </div>
       </div>
+
       <div
         id="post-list"
         class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"

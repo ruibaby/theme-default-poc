@@ -43,8 +43,8 @@ onMounted(() => {
 
 <template>
   <Header />
-  <section class="container mx-auto mt-6 flex gap-6">
-    <div class="flex-1">
+  <section class="container mx-auto mt-6 grid grid-cols-4 gap-6">
+    <div class="col-span-4 sm:col-span-3">
       <div id="filters" class="flex items-center">
         <div class="inline-flex items-center gap-2">
           <div
