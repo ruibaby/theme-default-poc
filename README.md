@@ -1,13 +1,3 @@
-# vue-starter
+# theme-default-poc
 
-- Vue
-- Vite
-- Pinia
-- Vue Router
-- Tailwind CSS
-
-```bash
-degit ruibaby/vue-starter new-project
-
-cd new-project && pnpm install
-```
+Halo 2.0 默认主题的原型，已经在 https://github.com/halo-sigs/theme-default 中实现。
